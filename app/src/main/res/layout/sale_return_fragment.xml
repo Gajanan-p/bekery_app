@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Copy Ride.......Gajanan Pande
+
+-->
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    tools:context="com.ssinfomate.bakeryapp.ui.saleretuen.SaleReturnFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.40"
+                        android:text="Date"
+                        android:textSize="18sp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text_sale_return_date"
+                        style="@style/EditTextViewComponent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.55"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.40"
+                        android:text="Select Item"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="2dp"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text_sale_return_item_name"
+                        style="@style/EditTextViewComponent"
+                        android:layout_width="0dp"
+                        android:hint="Select Item....."
+                        android:layout_weight="0.55"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="2dp"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:text="Enter Quantity"
+                    android:textSize="18sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/text_sale_return_qty"
+                    style="@style/EditTextViewComponent"
+                    android:layout_width="0dp"
+                    android:inputType="number"
+                    android:layout_weight="0.40"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_sale_return_add"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.20"
+                        android:layout_marginLeft="10dp"
+                        android:text="Add"
+                        android:background="@drawable/button_background"
+                        android:textColor="@color/white"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_sale_return_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancel"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_sale_return_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_sale_return_export"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Export"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:id="@+id/layout_customer_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <!--TextView
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:text="Edit"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" /-->
+
+
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="Item Code"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="Item Name"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="1dp"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:text="Quantity"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" />
+
+                    <!--TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="Rate"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" /-->
+                    <TextView
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="Delete"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycle_item_list"
+                    android:layout_marginBottom="40dp"
+                    tools:listitem="@layout/row_sale_return_list"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

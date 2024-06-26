@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/bottom_home">
+    <fragment
+        android:id="@+id/bottom_home"
+        android:name="com.ssinfomate.bakeryapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.ssinfomate.bakeryapp.ui.userlogin.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_nav_login_to_bottom_home"
+            app:destination="@id/bottom_home" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_changePassword"
+            app:destination="@id/nav_changePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_animation"
+        android:name="com.ssinfomate.bakeryapp.ui.animation.AnimationFragment"
+        android:label="@string/menu_sale_animation"
+        tools:layout="@layout/animation_fragment" >
+        <action
+            android:id="@+id/action_nav_animation_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bottom_saleReturn"
+        android:name="com.ssinfomate.bakeryapp.ui.saleretuen.SaleReturnFragment"
+        android:label="Sale Return"
+        tools:layout="@layout/sale_return_fragment" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.ssinfomate.bakeryapp.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/logout_fragment" />
+
+    <fragment
+        android:id="@+id/nav_changePassword"
+        android:name="com.ssinfomate.bakeryapp.ui.changepass.ChangePasswordFragment"
+        android:label="@string/title_change_password"
+        tools:layout="@layout/change_password_fragment" >
+        <action
+            android:id="@+id/action_nav_changePassword_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_returnReport"
+        android:name="com.ssinfomate.bakeryapp.ui.returnreport.ReturnReportFragment"
+        android:label="@string/title_sale_report"
+        tools:layout="@layout/return_report_fragment" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.ssinfomate.bakeryapp.ui.about.AboutUsFragment"
+        android:label="@string/title_about_us"
+        tools:layout="@layout/about_us_fragment" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.ssinfomate.bakeryapp.ui.contactus.ContactUsFragment"
+        android:label="@string/title_contact_us"
+        tools:layout="@layout/contact_us_fragment" />
+
+</navigation>

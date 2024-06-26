@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#FAFAFA"
+    tools:context="com.ssinfomate.bakeryapp.ui.returnreport.ReturnReportFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:id="@+id/layout_customer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <!--TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:text="D"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" /-->
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="TR SNO"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="TR DATE"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="ITEM CODE"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="1dp"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:text="ITEM DESCRIPTION"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:layout_margin="1dp"
+                        android:text="QUANTITY"
+                        android:background="#228B22"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycle_return_list"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/row_return_list"
+
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/button_create_pdf"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:background="@drawable/ic_baseline_picture_as_pdf_24"
+        />
+
+</RelativeLayout>

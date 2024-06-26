@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Arkam Foods</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_sale_animation">Bakery Test</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_contact">Contact Us</string>
+    <!-- Bottom Navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_sale_return">Sale Return</string>
+    <string name="title_sale_report">Return Report</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_contact_us">Contact Us</string>
+</resources>

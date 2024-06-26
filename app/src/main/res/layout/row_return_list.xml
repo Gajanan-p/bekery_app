@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_background">
+
+    <LinearLayout
+        android:id="@+id/layout_customer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:background="#000000"
+            android:orientation="horizontal">
+            <!--TextView
+                android:id="@+id/text_row_return_GRSALEDTID"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="32"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/-->
+
+
+            <TextView
+                android:id="@+id/text_row_return_TRSNO"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="23"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/text_row_return_TRDATE"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="2/14/2022"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/text_row_return_ITEMID"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="5"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+              android:id="@+id/text_row_return_SRNO"
+              android:layout_width="300dp"
+              android:layout_height="40dp"
+              android:padding="8dp"
+              android:text="25"
+              android:layout_margin="1dp"
+              android:background="#ffffff"
+              android:textSize="16sp"
+              android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_row_return_QUANTITY"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="60"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
